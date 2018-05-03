@@ -1,0 +1,99 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosansphoenician.css);
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --standard-gap: 10vh;
+  --tiny-gap: 3px;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  padding: var(--tiny-gap);
+}
+/* 'Concert One', 'Fredoka One', 'Libre Barcode 39 Text' */
+
+body {
+  margin: var(--standard-gap) calc(35vw - 50px);
+  background-image: url(medea-nobg-svgomg.svg);
+  background-color: #a3d1d8;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: var(--standard-gap) 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: calc(0.5 * var(--standard-gap));
+}
+
+h1 {
+  font-family: 'Unica One', sans-serif;
+  font-weight: normal;
+  height: 100%;
+  background-color: white;
+  color: #d86d6c;
+  margin: 0px 0px calc(0.5 * var(--standard-gap)) 0px;
+  padding: 0px var(--tiny-gap);
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+}
+
+.standingbox {
+  grid-row: 2 / span 2;
+  grid-column: 1 / span 1;
+}
+
+.lyingbox {
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+}
+
+p {
+  width: 100%;
+  font-family: 'Karla', serif;
+  margin: 0px 0px calc(0.5 * var(--standard-gap)) 0px;
+  padding: calc(0.25 * var(--standard-gap)) calc(2 * var(--standard-gap)) calc(0.25 * var(--standard-gap)) var(--tiny-gap);
+  background-color: white;
+  grid-row: auto;
+  grid-column: 2 / span 1;
+}
+
+dl {
+  width: 100%;
+  overflow: hidden;
+  margin: 0
+  background-color: white;
+  display: contents;
+}
+
+dt {
+  font-family: 'Noto Sans Phoenician', serif;
+  background-color: white;
+  min-height: 35px;
+  grid-row: auto;
+  grid-column: 1 / span 1;
+  padding: 0px var(--tiny-gap);
+  display: flex;
+  align-items: center;
+}
+
+dd {
+  font-family: 'Unica One', serif;
+  margin-left: 0px;
+  background-color: white;
+  min-height: 35px;
+  grid-row: auto;
+  grid-column: 2 / span 1;
+  padding: 0px var(--tiny-gap);
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #d86d6c;
+}
